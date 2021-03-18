@@ -1,0 +1,6 @@
+ticker,shares,buy,sell
+cashposition,10000,0,0
+pg,200,100,150
+msft,200,200,350
+goog,200,1800,2200
+wfc,200,35,60
