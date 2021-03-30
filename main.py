@@ -52,12 +52,13 @@ def find_file():
     return(file)
 
 
-def main():
+def shell_interface():
     """
-    provides interactive interface for options decision support tool
+    provides interactive shell for options decision support tool
     if selecting defaults, will look for files in ./data
     see README.md for details
     """
+    
     print("#################################################################")
     print("Welcome to Ron's ODSS (Options Decision Support System)")
     print("This tool helps identify the most profitable options to sell")
@@ -132,5 +133,23 @@ def main():
                 print()
 
 
+def gui_interface():
+    print("not yet!")
+    pass
+
+
+def main(shell = True):
+    choice = ""
+    while not (choice == "g" or choice == "s"):
+        choice = input("<G>UI or <S>hell:")
+        choice.lower
+        if choice == "g":
+            shell = False
+    if shell == True:
+        shell_interface()
+    else:
+        gui_interface()
+
+   
 if __name__ == '__main__':
     main()
