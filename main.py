@@ -134,7 +134,7 @@ def shell_interface():
 
 
 def gui_interface():
-    print("it starts here!")
+    print("not yet!")
     pass
 
 
